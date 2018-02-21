@@ -8,19 +8,26 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
-  background-color: #0d3dc1;
-  color: white;
+  background-color: grey;
+  color: black;
   font-family: 'Barlow';
 }
 
-.landingPageMessage .announcementText {
-  font-size: 70px;
+.landingPageMessage .logoContainer .logo {
+  width: 80%;
 }
 
 .landingPageMessage .teamText {
   font-size: 40px;
-  margin-left: 30%;
-  margin-top: 30px;
+}
+
+.landingPageMessage .socialNetworks {
+  padding: 20px 0;
+}
+
+.landingPageMessage .socialNetworks .icon {
+  width: 13%;
+  cursor: pointer;
 }
