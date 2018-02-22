@@ -22,6 +22,8 @@ html, body {
   position: absolute; right: 0; top: 0;
   min-width: 100%;
   width: 100%; height: auto;
+  background: url("images/movie.png") no-repeat;
+  background-size: cover;
 }
 
 .landingPageMessage .logoContainer .logo {
