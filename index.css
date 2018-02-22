@@ -1,18 +1,27 @@
 html, body {
   height: 100%;
   margin: 0;
+  overflow: hidden;  
 }
 
 .landingPageMessage {
+  position: relative;
   height: 100%;  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  background-color: grey;
-  color: black;
+  color: white;
+  font-weight: bold;
   font-family: 'Barlow';
+  z-index: 1;
+}
+
+#videoBackground {
+  position: absolute; right: 0; top: 0;
+  min-width: 100%;
+  width: 100%; height: auto;
 }
 
 .landingPageMessage .logoContainer .logo {
@@ -29,5 +38,22 @@ html, body {
 
 .landingPageMessage .socialNetworks .icon {
   width: 13%;
-  cursor: pointer;
+}
+
+@media screen and (max-device-width: 750px) {
+  #videoBackground {
+    display: none;
+  }
+
+  .landingPageMessage {
+    background: black;
+  }
+
+  .landingPageMessage .logoContainer .logo {
+    width: 100%;
+  }
+
+  .landingPageMessage .socialNetworks .icon {
+    width: 25%;
+  }
 }
