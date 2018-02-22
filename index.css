@@ -4,6 +4,12 @@ html, body {
   overflow: hidden;  
 }
 
+#videoBackground {
+  position: absolute; right: 0; top: 0;
+  min-width: 100%;
+  width: 100%; height: auto;
+}
+
 .landingPageMessage {
   position: relative;
   height: 100%;  
@@ -15,13 +21,6 @@ html, body {
   color: white;
   font-weight: bold;
   font-family: 'Barlow';
-  z-index: 1;
-}
-
-#videoBackground {
-  position: absolute; right: 0; top: 0;
-  min-width: 100%;
-  width: 100%; height: auto;
 }
 
 .landingPageMessage .logoContainer .logo {
@@ -29,7 +28,7 @@ html, body {
 }
 
 .landingPageMessage .teamText {
-  font-size: 40px;
+  font-size: 3em;
 }
 
 .landingPageMessage .socialNetworks {
@@ -40,7 +39,7 @@ html, body {
   width: 13%;
 }
 
-@media screen and (max-device-width: 750px) {
+@media screen and (max-device-width: 768px) {
   #videoBackground {
     display: none;
   }
@@ -51,6 +50,10 @@ html, body {
 
   .landingPageMessage .logoContainer .logo {
     width: 100%;
+  }
+
+  .landingPageMessage .teamText {
+    font-size: 2em;
   }
 
   .landingPageMessage .socialNetworks .icon {
